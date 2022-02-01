@@ -16,8 +16,8 @@ public class Base {
 	public IOSDriver returnDriver() throws MalformedURLException {
 		DesiredCapabilities cap = new DesiredCapabilities();
 
-		cap.setCapability(MobileCapabilityType.PLATFORM_VERSION, "15.2");
-		cap.setCapability(MobileCapabilityType.DEVICE_NAME, "iPhone 8");
+		cap.setCapability(MobileCapabilityType.PLATFORM_VERSION, "15.0");
+		cap.setCapability(MobileCapabilityType.DEVICE_NAME, "iPhone 8 Plus");
 		cap.setCapability(MobileCapabilityType.AUTOMATION_NAME, AutomationName.IOS_XCUI_TEST);
 		cap.setCapability(MobileCapabilityType.APP, System.getenv("BITRISE_APK_PATH"));
 //		cap.setCapability(MobileCapabilityType.APP, app);
