@@ -9,12 +9,11 @@ import org.testng.annotations.Test;
 
 import io.appium.java_client.ios.IOSDriver;
 
-public class Test1 extends Base{
-
+public class Test1 extends Base {
 
 	@Test
 	public void test22() throws MalformedURLException {
-	
+
 		IOSDriver driver = returnDriver();
 
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
@@ -24,6 +23,11 @@ public class Test1 extends Base{
 		scrollObject.put("direction", "down");
 		scrollObject.put("name", "Web View");
 
+		try {
+			System.out.println("ele: " + driver.findElement(By.xpath("//*")));
+		} catch (Exception e) {
+
+		}
 		driver.executeScript("mobile:scroll", scrollObject);
 		driver.findElementByAccessibilityId("Web View").click();
 		driver.findElement(By.xpath("//XCUIElementTypeButton[@name='UIKitCatalog']")).click();

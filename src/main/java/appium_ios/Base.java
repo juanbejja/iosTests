@@ -21,6 +21,24 @@ public class Base {
 		cap.setCapability(MobileCapabilityType.AUTOMATION_NAME, AutomationName.IOS_XCUI_TEST);
 		cap.setCapability(MobileCapabilityType.APP, System.getenv("BITRISE_APK_PATH"));
 //		cap.setCapability(MobileCapabilityType.APP, app);
+		System.out.println("---------------------");
+		System.out.println("---------------------");
+		System.out.println("---------------------");
+		System.out.println("---------------------");
+		System.out.println("---------------------");
+		System.out.println("---------------------");
+		System.out.println("---------------------");
+		System.out.println("APP PATH: "+System.getenv("BITRISE_APK_PATH"));
+		System.out.println("---------------------");
+		System.out.println("---------------------");
+		System.out.println("---------------------");
+		System.out.println("---------------------");
+		System.out.println("---------------------");
+		System.out.println("---------------------");
+		System.out.println("---------------------");
+		System.out.println("---------------------");
+		System.out.println("---------------------");
+		System.out.println("---------------------");
 		IOSDriver driver = new IOSDriver<>(new URL("http://localhost:4723/wd/hub"), cap);
 		return driver;
 	}
