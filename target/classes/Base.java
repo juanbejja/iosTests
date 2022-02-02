@@ -11,9 +11,9 @@ import io.appium.java_client.remote.MobileCapabilityType;
 
 public class Base {
 
-	private static final String app = System.getProperty("user.home") + "/Desktop/UIKitCatalog.app";
+	private static final String app = System.getProperty("user.home") + "/Desktop/UIKitCatalog2.app";
 	private static final String appw = "/Users/juan.pablo.bejarano/eclipse-workspace/appiumIOSBitrase/src/main/resources/UIKitCatalog.app";
-	private static final String app_bitrise = "/appium_automation/src/main/resources/UIKitCatalog.app";
+	private static final String app_bitrise = "/Users/vagrant/git/appium_automation/src/main/resources/UIKitCatalog.app";
 
 	public IOSDriver returnDriver() throws MalformedURLException {
 		DesiredCapabilities cap = new DesiredCapabilities();
