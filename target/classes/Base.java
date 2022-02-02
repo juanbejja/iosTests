@@ -16,13 +16,6 @@ public class Base {
 	private static final String app_bitrise = "/Users/vagrant/git/appium_automation/src/main/resources/UIKitCatalog.app";
 
 	public IOSDriver returnDriver() throws MalformedURLException {
-		DesiredCapabilities cap = new DesiredCapabilities();
-
-		cap.setCapability(MobileCapabilityType.PLATFORM_VERSION, "15.0");
-		cap.setCapability(MobileCapabilityType.DEVICE_NAME, "iPhone 8 Plus");
-		cap.setCapability(MobileCapabilityType.AUTOMATION_NAME, AutomationName.IOS_XCUI_TEST);
-		cap.setCapability(MobileCapabilityType.APP, System.getenv("BITRISE_APP_DIR_PATH"));
-//		cap.setCapability(MobileCapabilityType.APP, app_bitrise);
 		System.out.println("---------------------");
 		System.out.println("---------------------");
 		System.out.println("---------------------");
@@ -35,6 +28,15 @@ public class Base {
 		System.out.println("---------------------");
 		System.out.println("---------------------");
 		System.out.println("---------------------");
+		DesiredCapabilities cap = new DesiredCapabilities();
+		
+
+		cap.setCapability(MobileCapabilityType.PLATFORM_VERSION, "15.0");
+		cap.setCapability(MobileCapabilityType.DEVICE_NAME, "iPhone 8 Plus");
+		cap.setCapability(MobileCapabilityType.AUTOMATION_NAME, AutomationName.IOS_XCUI_TEST);
+		cap.setCapability(MobileCapabilityType.APP, System.getenv("BITRISE_APP_DIR_PATH"));
+//		cap.setCapability(MobileCapabilityType.APP, app_bitrise);
+
 		IOSDriver driver = new IOSDriver<>(new URL("http://localhost:4723/wd/hub"), cap);
 		return driver;
 	}
