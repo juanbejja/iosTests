@@ -33,6 +33,7 @@ public class Base {
 
 		cap.setCapability(MobileCapabilityType.PLATFORM_VERSION, "15.0");
 		cap.setCapability(MobileCapabilityType.DEVICE_NAME, "iPhone 8 Plus");
+		cap.setCapability(MobileCapabilityType.UDID, "0CC2A307-1FA2-48CF-8DB0-8216DC84F6C3");
 		cap.setCapability(MobileCapabilityType.AUTOMATION_NAME, AutomationName.IOS_XCUI_TEST);
 		cap.setCapability(MobileCapabilityType.APP, app_bitrise);
 //		cap.setCapability(MobileCapabilityType.APP, app_bitrise);
