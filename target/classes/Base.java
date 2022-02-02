@@ -21,14 +21,15 @@ public class Base {
 		cap.setCapability(MobileCapabilityType.PLATFORM_VERSION, "15.0");
 		cap.setCapability(MobileCapabilityType.DEVICE_NAME, "iPhone 8 Plus");
 		cap.setCapability(MobileCapabilityType.AUTOMATION_NAME, AutomationName.IOS_XCUI_TEST);
-//		cap.setCapability(MobileCapabilityType.APP, System.getenv("BITRISE_IPA_PATH"));
-		cap.setCapability(MobileCapabilityType.APP, app_bitrise);
+		cap.setCapability(MobileCapabilityType.APP, System.getenv("BITRISE_APP_DIR_PATH"));
+//		cap.setCapability(MobileCapabilityType.APP, app_bitrise);
 		System.out.println("---------------------");
 		System.out.println("---------------------");
 		System.out.println("---------------------");
 		System.out.println("---------------------");
 		System.out.println("---------------------");
-		System.out.println("APP PATH: " + System.getenv("BITRISE_APK_PATH"));
+		System.out.println("APP PATH: " + System.getenv("BITRISE_APP_DIR_PATH"));
+		System.out.println("APP PATH: " + System.getenv("BITRISE_APP_DIR_PATH_LIST"));
 		System.out.println("---------------------");
 		System.out.println("---------------------");
 		System.out.println("---------------------");
